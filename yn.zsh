@@ -16,6 +16,13 @@ __yn::ohmyzsh::setup() {
   source "${ZDOTDIR:-$HOME}/ohmyzsh.zshrc"
 }
 
+__yn::zpl::setup() {
+  export ZPLG_HOME="${ZDOTDIR:-$HOME}/.zplugin"
+  if ! test -d "$ZPLG_HOME/bin/.git"; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/psprint/zplugin/master/doc/install.sh)"
+  fi;
+}
+
 __yn::rvm::setup() {
   [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 }
