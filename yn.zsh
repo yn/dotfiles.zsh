@@ -13,4 +13,5 @@ __yn::ohmyzsh::setup() {
   if ! test -d "$ZSH/.git"; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   fi;
+  source "${ZDOTDIR:-$HOME}/ohmyzsh.zshrc"
 }
