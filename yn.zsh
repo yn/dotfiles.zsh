@@ -15,3 +15,7 @@ __yn::ohmyzsh::setup() {
   fi;
   source "${ZDOTDIR:-$HOME}/ohmyzsh.zshrc"
 }
+
+__yn::rvm::setup() {
+  [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+}
