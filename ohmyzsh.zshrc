@@ -51,7 +51,11 @@ ZSH_CUSTOM=${ZDOTDIR:-$HOME}/oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+if [[ $(uname) == Darwin ]]; then
+  osx="osx"
+fi
+
+plugins=(bundler git git-extras git-flow rails ruby rvm $osx autojump brew)
 
 source $ZSH/oh-my-zsh.sh
 
