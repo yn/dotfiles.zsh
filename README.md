@@ -1,1 +1,1 @@
-ZSH
+git clone <thisrepo> ~/.zsh
