@@ -10,10 +10,11 @@ yn::ohmyzsh::setup() {
 yn::zpl::setup() {
   export ZPLG_HOME="${ZDOTDIR:-$HOME}/.zplugin"
   if ! test -d "$ZPLG_HOME/bin/.git"; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/psprint/zplugin/master/doc/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/yn/zplugin/master/doc/install.sh)"
   fi;
 }
 
 yn::rvm::setup() {
   [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 }
+
