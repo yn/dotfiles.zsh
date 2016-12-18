@@ -6,7 +6,7 @@ yn::zpl::setup
 popd -q
 
 ## Added by Zplugin's installer
-source '/Users/yn/.zsh/.zplugin/bin/zplugin.zsh'
+source "${ZDOTDIR:-$HOME}/.zplugin/bin/zplugin.zsh"
 ### End of Zplugin's installer chunk
 
 ## YN zplugin section
