@@ -1,3 +1,4 @@
 .oh-my-zsh
 .zplugin
 .zcompdump*
+.zshdb_hist
