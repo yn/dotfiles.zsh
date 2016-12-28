@@ -28,6 +28,7 @@ shadow_compinit=functions[compinit]
 functions[compinit]=""
 
 zplg load gcv/dotfiles
+unsetopt rc_expand_param
 
 export ZSH=/Users/yn/.zsh/.zplugin/plugins/robbyrussell---oh-my-zsh
 yn::ohmyzsh::setup
