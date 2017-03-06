@@ -8,3 +8,4 @@ export PAGER="less"
 export LESS="-ieMRFXx2"
 #export PATH=$HOME/miniconda3/bin:$PATH
 #if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PATH=$HOME/Library/Python/2.7/bin:$PATH
